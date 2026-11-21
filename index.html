@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9x9Labs</title>
+  <style>
+    :root {
+      --indigo: #3d57b8;
+      --ink: #21293d;
+      --muted: #616b85;
+      --border: #e4e8f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Maru Gothic ProN", "Hiragino Sans", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(155deg, #faf7fc 0%, #f0f5fc 55%, #f5faf7 100%);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 24px rgba(33, 41, 61, 0.06);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      color: var(--indigo);
+    }
+    p {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+    a.item {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      background: #f7f9fe;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    a.item:hover {
+      border-color: var(--indigo);
+      transform: translateY(-1px);
+    }
+    .item-title {
+      display: block;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--indigo);
+    }
+    .item-desc {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--indigo); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>9x9Labs</h1>
+      <p>iPhone アプリのサポート情報およびプライバシーポリシーを掲載しています。</p>
+      <div class="links">
+        <a class="item" href="./kukumath/">
+          <span class="item-title">九九ます（KukuMath）サポートページ</span>
+          <span class="item-desc">アプリの使い方・よくある質問・お問い合わせ</span>
+        </a>
+        <a class="item" href="./kukumath/privacy.html">
+          <span class="item-title">九九ます（KukuMath）プライバシーポリシー</span>
+          <span class="item-desc">利用者情報の取り扱いについて（日本語 / English）</span>
+        </a>
+      </div>
+    </div>
+    <footer>
+      お問い合わせ：<a href="mailto:9x9labs@gmail.com">9x9labs@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>
